@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Policy Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header"> 
+      <h1>Policy<span>Checker</span></h1>
+      <p>Scan, Analyze, Stay Safe</p>
+    </div> 
+    
+    <div class="menu-container">
+      <button class="menu-icon">☰</button> 
+      <div class="menu-dropdown">
+        <a href="#" class="menu-item" id="userManual">User Manual</a>
+        <a href="#" class="menu-item" id="saveImage">Save Image</a>
+        <a href="#" class="menu-item" id="about">About</a>
+      </div>
+    </div>
+    
+    <div class="mode-toggle">
+      <button id="normalBtn" class="active">Normal</button>
+      <button id="aiBtn">AI Mode</button>
+    </div>
+    
+    <button id="scanBtn" class="scan-btn pulse">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
+      </svg>
+      Scan Now
+    </button>
+    
+    <div id="results" class="results">
+      <div class="score-container">
+        <div class="score-circle">
+          <span id="score">0</span>%
+        </div>
+        <div class="score-label">Safety Score</div>
+      </div>
+      
+      <div class="pros-cons">
+        <div class="pros">
+          <h3>✅ Pros</h3>
+          <ul id="prosList"></ul>
+        </div>
+        <div class="cons">
+          <h3>❌ Cons</h3>
+          <ul id="consList"></ul>
+        </div>
+      </div>
+      
+      <div id="summary" class="summary"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

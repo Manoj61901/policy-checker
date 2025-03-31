@@ -1,0 +1,39 @@
+.policy-highlight {
+  background-color: rgba(255, 255, 0, 0.3);
+  padding: 2px 0;
+  border-bottom: 2px dashed #f39c12;
+  cursor: help;
+}
+
+.policy-highlight:hover {
+  background-color: rgba(255, 235, 59, 0.5);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+ 
+body.dark-mode .header h1 {
+  color: #ecf0f1;
+}
+
+body.dark-mode .menu-icon {
+  background: #ecf0f1; 
+  color: #2c3e50;
+}
+
+body.dark-mode .menu-dropdown {
+  background: #34495e;
+  border: 1px solid #2c3e50;
+}
+
+body.dark-mode .menu-item {
+  color: #ecf0f1;
+}
+
+body.dark-mode .menu-item:hover {
+  background: #2c3e50;
+  color: #ecf0f1;
+}
